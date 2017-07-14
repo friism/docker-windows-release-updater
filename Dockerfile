@@ -1,5 +1,10 @@
 FROM python:3.6-alpine
-COPY . /build
+
 WORKDIR /build
+
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-ENTRYPOINT ["/build/update-windows-release-json.py"]
+
+COPY . .
+
+ENTRYPOINT [ "/build/update-windows-release-json.py" ]

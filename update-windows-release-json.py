@@ -13,8 +13,7 @@ DEFAULT_URL = (
 )
 
 DEFAULT_NOTES = (
-    "Contains the CS Docker Engine for use with Windows Server 2016 "
-    "and Nano Server."
+    "Docker for Windows Server 2016"
 )
 
 
